@@ -1,0 +1,27 @@
+{
+    "name": "Type In",
+    "version": "0.0.1",
+    "manifest_version": 2,
+    "description": "A browser extension to enter text on any input form",
+    "icons": {
+        "128": "icons/typeIn128x128.png"
+    },
+    "browser_action": {
+        "default_popup": "content/typeIn-page.htm"
+    },
+    "permissions": [
+        "clipboardRead"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "scripts/dom-scripts.js"
+            ],
+            "run_at": "document_end",
+            "all_frames": false
+        }
+    ]
+}

@@ -1,0 +1,35 @@
+input,
+input:focus,
+input:focus-visible {
+    border: hidden;
+    outline: none;
+    width: 450px;
+    background-color: #4e4e4e;
+    color: #eeeded
+}
+
+button {
+    margin: 5px;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #636363;
+    background-color: #1d1d1d;
+    color: #eeeded;
+}
+
+button:hover {
+    border-color: #868686;
+}
+
+button:focus {
+    border-color: #4e4e4e;
+}
+
+button:active {
+    border-color: #656262;
+    background-color: #272727;
+}
+
+body {
+    background-color: #4e4e4e;
+}
